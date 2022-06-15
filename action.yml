@@ -1,0 +1,15 @@
+name: 'Lowercase All'
+description: 'Lowercase files and folders names in current directory'
+author: 'Cpavrai'
+
+branding:
+  icon: 'minus-circle'
+  color: 'gray-dark'
+
+runs:
+  using: "composite"
+  steps:
+    - run: $GITHUB_ACTION_PATH/scripts/lowerfiles.sh
+      shell: sh
+    - run: $GITHUB_ACTION_PATH/scripts/lowerfolders.sh
+      shell: sh
