@@ -9,7 +9,7 @@ branding:
 runs:
   using: "composite"
   steps:
-    - run: $GITHUB_ACTION_PATH/scripts/lowerfiles.sh
-      shell: sh
     - run: $GITHUB_ACTION_PATH/scripts/lowerfolders.sh
+      shell: sh
+    - run: $GITHUB_ACTION_PATH/scripts/lowerfiles.sh
       shell: sh
