@@ -14,7 +14,7 @@ steps:
     uses: actions/checkout@v1
   - name: Lowercase Source
     working-directory: ./src
-    uses: Cpavrai/lowercase-repository@v3
+    uses: Cpavrai/lowercase-repository@v4
 ```
 
 ## License
